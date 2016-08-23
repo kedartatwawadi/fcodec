@@ -9,6 +9,7 @@ Fcodec can simply be installed as follows:
 #install ffmpeg and its libraries. 
 ./install.sh`
 ```
+If custom ffmpeg install is required, follow the steps below.
 
 Fcodec depends upon ffmpeg. Some custom filters have been implemented in FFmpeg. 
  - Use the guide/install to download the dependencies of FFmpeg: [FFmpeg Compilation Guide](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu)
