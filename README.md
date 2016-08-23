@@ -22,3 +22,7 @@ Performs video compression of the INPUT and stores it in the path OUTPUT
     -d      Performs Denoising of the video prior to compression
     -q      Set the quality (crf) value for compression
 ```
+
+## TODO
+1. Perform compression without demosaicing at the source
+2. Tryout VP9
