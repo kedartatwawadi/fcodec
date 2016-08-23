@@ -4,6 +4,12 @@ New video compression scheme.
 Some install/usage instructions have been added below. I will keep on updating the document to make it easier, and as the project progresses.
 
 ## Install
+Fcodec can simply be installed as follows:
+```bash
+#install ffmpeg and its libraries. 
+./install.sh`
+```
+
 Fcodec depends upon ffmpeg. Some custom filters have been implemented in FFmpeg. 
  - Use the guide/install to download the dependencies of FFmpeg: [FFmpeg Compilation Guide](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu)
  - As of now, we only need x264, x265 libraries. So no need to install other external libraries
