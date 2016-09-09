@@ -2,17 +2,19 @@
 #!/bin/bash
 
 ## Write Help Message
+# Usage: ${0##*/} [-hgd] [-q crf] [INPUT] [OUTPUT] 
 show_help() {
 cat << EOF
-Usage: ${0##*/} [-hgd] [-q crf] [INPUT] [OUTPUT] 
+Usage: ${0##*/} [-hd] [-q crf] [INPUT] [OUTPUT] 
+
 Performs video compression of the INPUT and stores it in the path OUTPUT
 
     -h          display this help and exit
-    -g		Removes the grid present in the video
     -d          Performs Denoising of the video prior to compression
     -q		Set the quality (crf) value for compression
 EOF
 }
+#    -g		Removes the grid present in the video
 
 ## Initialise Parameters
 crf=16
@@ -63,10 +65,10 @@ echo "$INPUT"
 OPTIONS="yadif"
 
 ## Remove Grid
-if $grid_remove; then
-    OPTIONS="$OPTIONS,convselective=0 1 0 1 0 1 0 1 0:0 1 0 1 0 1 0 1 0:0 1 0 1 0 1 0 1 0:0 1 0 1 0 1 0 1 0:1/4:1/4:1/4:1/4:0:0:0:0:0:1:2:2"
-    echo "Grid removed"
-fi
+# if $grid_remove; then
+#     OPTIONS="$OPTIONS,convselective=0 1 0 1 0 1 0 1 0:0 1 0 1 0 1 0 1 0:0 1 0 1 0 1 0 1 0:0 1 0 1 0 1 0 1 0:1/4:1/4:1/4:1/4:0:0:0:0:0:1:2:2"
+#     echo "Grid removed"
+# fi
 
 # Denoise the video if required
 if $denoise; then
