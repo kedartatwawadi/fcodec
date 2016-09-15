@@ -2,17 +2,6 @@
 New video compression scheme. 
 
 Some install/usage instructions have been added below. I will keep on updating the document to make it easier, and as the project progresses.
-## Discussion (8 sept)
-As discussed during the previous meeting:
-
-1. We want a compressor for colored video & raw-unbayered video (video which has not yet been demosaiced from the Bayer filter). The current compressor should work fine for the colored video directly, as ffmpeg adjusts the number of channels accordingly.
-- To make it work, I have removed the grid filter (which was supposed to correct for demosaicing, as of now).
-- I have retained the denoiser, as that is still important and gives a slight improvement of ~20-30%.
-
-2. For demosaicing, right now working with matlab executables. But, as our plan to work on demosaicing is still uncertain, will wait until the next discussion.
-
-3. Broad experiments: 
-
 
 ## Install
 Fcodec can simply be installed as follows:
