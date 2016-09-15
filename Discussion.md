@@ -46,6 +46,11 @@ We tried out different CRF values [0 8 16 20 24 30] for the 20 videos. Here, 0 c
 We tested with a few filters (most of them state-of-the-art). Which include hqdn3d, and its various variants based on spatial and temporal settings.
 Also planning to test out the new NLMeans denoiser. However, which exact denoiser to use can be decided after consultation with the computer vision team. 
 
+1. Hqdn3d with conservative settings 
+![denoise](https://docs.google.com/spreadsheets/d/1ApCN0lHEm9iqc4ftGyucQbUI8iKzediZ777BcaHSqHU/pubchart?oid=289480964&format=image)
+
+As we observe, the difference becomes less pronounced as the CRF level increases. This is expected, considering lossy versions would try to remove unwanted noise first. But, CRF levels should not be direclty compared here, as they are relative to lossless version which would for sure be much better for the denoised video.
+
 #### Optical Flow experiments
 We conducted similar experiments as with the raw videos for impact on low-level algorithms. We expect the demosaiced videos to have much less impact.
 
