@@ -10,7 +10,8 @@ We tried out different CRF values [0 8 16 20 24 30] for the 20 videos. Here, 0 c
 ![CRF chart](https://docs.google.com/spreadsheets/d/1ApCN0lHEm9iqc4ftGyucQbUI8iKzediZ777BcaHSqHU/pubchart?oid=1801174671&format=image)
 
 **Detailed numbers (all in MB)**
-|CRF0|CRF8|CRF16|CRF20|CRF24|CRF30|Filename|
+
+| CRF0 | CRF8 | CRF16 | CRF20 | CRF24 | CRF30 | Filename |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |716|35|7.2|3.4|1.8|0.8|20140320_184w250_krk_krk_shift1_002.tavi|
 |724|37|8.6|4.2|2.2|0.95|20140320_184w250_krk_krk_shift1_003.tavi|
