@@ -7,7 +7,7 @@ The results are summarised below:
 #### CRF experiment
 We tried out different CRF values [0 8 16 20 24 30] for the 20 videos. Here, 0 corresponds to lossless, while 24 corresponds to slightly worse than human indistinguishable (for typical videos).
 
-[CRF chart](https://docs.google.com/spreadsheets/d/1ApCN0lHEm9iqc4ftGyucQbUI8iKzediZ777BcaHSqHU/pubchart?oid=1801174671&format=image)
+![CRF chart](https://docs.google.com/spreadsheets/d/1ApCN0lHEm9iqc4ftGyucQbUI8iKzediZ777BcaHSqHU/pubchart?oid=1801174671&format=image)
 
 #### Denoise Experiment
 We tested with a few filters (most of them state-of-the-art). Which include hqdn3d, and its various variants based on spatial and temporal settings.
