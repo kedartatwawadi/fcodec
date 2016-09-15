@@ -8,11 +8,14 @@ There were some issues as discussed earlier. I am employing a hacky way right no
 Some examples of the demosaiced frames are below. Clearly, there seems to be lot of saturation in the frames (which might be a result of low-quality demosaicing). Which can be improved. On another note, better cameras, more fine-tuned for autonomous driving with non-Bayer arrangement can be possibly used.
 
 1. Raw Frame
+
 ![raw frame](images/image34.png)
+
 2. Demosaiced frames
-![frame1](demosaiced_image42.png)
-![frame2](demosaiced_image335.png)
-![frame3](demosaiced_image462.png)
+
+![frame1](demosaic_image42.png)
+![frame2](demosaic_image335.png)
+![frame3](demosaic_image462.png)
 
 The results are summarised below:
 ## Experiments
