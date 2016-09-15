@@ -13,9 +13,9 @@ Some examples of the demosaiced frames are below. Clearly, there seems to be lot
 
 2. Demosaiced frames
 
-![frame1](demosaic_image42.png)
-![frame2](demosaic_image335.png)
-![frame3](demosaic_image462.png)
+![frame1](images/demosaic_image42.png)
+![frame2](images/demosaic_image335.png)
+![frame3](images/demosaic_image462.png)
 
 The results are summarised below:
 ## Experiments
