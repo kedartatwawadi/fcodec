@@ -7,6 +7,13 @@ There were some issues as discussed earlier. I am employing a hacky way right no
 
 Some examples of the demosaiced frames are below:
 
+1. Raw Frame
+![raw frame](images/image34.png)
+2. Demosaiced frames
+![frame1](demosaiced_image42.png)
+![frame2](demosaiced_image335.png)
+![frame3](demosaiced_image462.png)
+
 The results are summarised below:
 ## Experiments
 ### CRF experiment
