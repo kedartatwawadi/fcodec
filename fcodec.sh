@@ -1,11 +1,13 @@
 #!/bin/sh
 #!/bin/bash
 
+#Grid remove command does not make sense for colored demosaiced videos. But is kep here as of now.
+
 ## Write Help Message
-# Usage: ${0##*/} [-hgd] [-q crf] [INPUT] [OUTPUT] 
+# Usage: ${0##*/} [-hgd] [-q crf] [INPUT] [OUTPUT]
 show_help() {
 cat << EOF
-Usage: ${0##*/} [-hd] [-q crf] [INPUT] [OUTPUT] 
+Usage: ${0##*/} [-hd] [-q crf] [INPUT] [OUTPUT]
 
 Performs video compression of the INPUT and stores it in the path OUTPUT
 
@@ -22,21 +24,21 @@ grid_remove=false
 denoise=true
 
 ## GetOpt reads optional parameters
-while getopts "q:hgd" opt; do
+while getopts "q:hd" opt; do
 	case $opt in
     	h)
       		show_help
 		    exit 0
       		;;
-    	g)
-      		echo "-g : Grid Remove" >&2
-      		grid_remove=true
-      		;;
+    	# g)
+      # 		echo "-g : Grid Remove" >&2
+      # 		grid_remove=true
+      # 		;;
     	d)
       		echo "-d : Perform Denoising" >&2
       		denoise=true
       		;;
-	    q) 
+	    q)
 		    echo "-q : CRF Quality value is $OPTARG" >&2
 		    crf=$OPTARG
  		    ;;
