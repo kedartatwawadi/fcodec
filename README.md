@@ -31,5 +31,6 @@ Performs video compression of the INPUT and stores it in the path OUTPUT
 ```
 
 ## TODO
-1. Perform compression without demosaicing at the source
-2. Tryout VP9
+1. Experiments with KITTI raw videos
+2. Experiments with VP9,x264,x265 (with different settings)
+3. Algorithms: Optical-Flow, Lane-Detection, Object-Detection
