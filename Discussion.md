@@ -57,3 +57,16 @@ We conducted similar experiments as with the raw videos for impact on low-level 
 
 #### Higher-Level algorithm impact
 We plan to conduct more experiments on this. But, overall higher level algorithms seem to be less impacted by compression artefacts. 
+
+
+### Experiment with the cityscape dataset demoVideo
+
+Link: [cityscape datasets](https://www.cityscapes-dataset.com/downloads/)
+
+The sample results for the stuttgart_00 video samples are as follows:
+
+- Original size with frames stored as individual png: 1.3GB
+- 284M	crf4_x264_hqdn3d_stuttgart_00.mp4
+- 455M	crf4_x264_stuttgart_00.mp4
+- 277M	crf4_x265_stuttgart_00.mp4
+- 148M	crf8_x265_stuttgart_00.mp4
